@@ -1,7 +1,7 @@
 {
-    "name": "supertest-fetch",
-    "version": "2.0.0",
-    "description": "Supertest with WHATWG fetch like interface.",
+    "name": "supertest-native-fetch",
+    "version": "1.0.0",
+    "description": "Supertest with node native fetch implementation.",
     "main": "lib/index.js",
     "types": "types/index.d.ts",
     "engines": {
@@ -35,7 +35,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jwalton/node-supertest-fetch.git"
+        "url": "git+https://github.com/muturgan/node-supertest-fetch.git"
     },
     "keywords": [
         "supertest",
@@ -46,9 +46,9 @@
     "author": "Jason Walton",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/jwalton/node-supertest-fetch/issues"
+        "url": "https://github.com/muturgan/node-supertest-fetch/issues"
     },
-    "homepage": "https://github.com/jwalton/node-supertest-fetch#readme",
+    "homepage": "https://github.com/muturgan/node-supertest-fetch/tree/fork#readme",
     "devDependencies": {
         "@types/chai": "^4.3.8",
         "@types/chai-as-promised": "^7.1.6",

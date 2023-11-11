@@ -1,29 +1,12 @@
-# supertest-fetch
+# supertest-native-fetch
 
-[![NPM version](https://badge.fury.io/js/supertest-fetch.svg)](https://npmjs.org/package/supertest-fetch)
-![Build Status](https://github.com/jwalton/node-supertest-fetch/workflows/GitHub%20CI/badge.svg)
-[![Coverage Status](https://coveralls.io/repos/jwalton/node-supertest-fetch/badge.svg)](https://coveralls.io/r/jwalton/node-supertest-fetch)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-
-A typescript friendly alternative to Supertest. Backed by native node fetch implementation so it requires node 18+ version.
-
-## What is it?
-
-This is a library heavily influenced by Visionmedia's excellent
-[supertest](https://github.com/visionmedia/supertest) library. The advantages
-of this library are:
-
--   Uses native node [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) implementation (support since node v18.0.0).
--   Should be instantly familiar to anyone who has used supertest.
--   First class support for promises.
--   Supertest has some weird quirks when used with Typescript becuase of
-    [@types/superagent](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/12044).
+This is a fork of [supertest-fetch](https://github.com/jwalton/node-supertest-fetch) that uses native node [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) implementation (support since node v18.0.0) instead of a [node-fetch](https://github.com/bitinn/node-fetch) package. It will be droped after / in case of a [pull request](https://github.com/jwalton/node-supertest-fetch/pull/173) merging.
 
 ## Example
 
 ```js
 import http from 'http';
-import { makeRequest } from 'supertest-fetch';
+import { makeRequest } from 'supertest-native-fetch';
 
 const server = http.createServer((req, res) => {
     res.setHeader('content-type', 'application/json');
